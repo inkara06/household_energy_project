@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+# NOTE: raw data (127 MB) and derived files are rebuilt by the code; the dataset link is in README
+data/raw/
+data/processed/
+results/forecast_predictions.parquet
+results/menu_state.json
