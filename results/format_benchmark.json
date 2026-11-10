@@ -1,0 +1,26 @@
+[
+  {
+    "approach": "CSV naive (baseline)",
+    "read_time_s": 0.24,
+    "peak_rss_mb": 614.8,
+    "frame_memory_mb": 239.1,
+    "file_size_mb": 126.8,
+    "rows": 2075259
+  },
+  {
+    "approach": "CSV chunked + float32",
+    "read_time_s": 2.23,
+    "peak_rss_mb": 310.1,
+    "frame_memory_mb": 71.2,
+    "file_size_mb": 126.8,
+    "rows": 2075259
+  },
+  {
+    "approach": "Parquet (pyarrow)",
+    "read_time_s": 0.07,
+    "peak_rss_mb": 277.3,
+    "frame_memory_mb": 71.2,
+    "file_size_mb": 22.0,
+    "rows": 2075259
+  }
+]
