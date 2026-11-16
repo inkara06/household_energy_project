@@ -15,9 +15,23 @@
 
 ## Запуск
 
+Откройте терминал в папке проекта, где находятся `README.md` и `requirements.txt`.
+
+Windows PowerShell (без активации окружения):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m streamlit run dashboard.py
+```
+
+Откройте адрес, показанный в терминале (обычно http://localhost:8501). При первом запуске данные скачиваются и обрабатываются автоматически. Для остановки нажмите `Ctrl+C` в терминале.
+
+Linux / macOS:
+
 ```bash
 python -m venv .venv
-source .venv/bin/activate            # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 
 jupyter lab analysis.ipynb           # основной анализ: Run → Run All Cells (~1–2 мин)
